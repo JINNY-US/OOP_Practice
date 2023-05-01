@@ -13,7 +13,7 @@ class Circle(Shape):
         
     def get_area(self):
         area = 3.14 * self.radius **2
-        print(area) 
+        return area
     
 class Rectangle(Shape):
     def __init__(self, width, length):
@@ -22,11 +22,11 @@ class Rectangle(Shape):
     
     def get_area(self):
         area = self.width * self.length
-        print(area)
+        return area
     
 my_circle = Circle(3)
-my_circle.get_area(my_circle)
+print(my_circle.get_area(my_circle))
 
 
 my_rectangle = Rectangle(2,2.3)
-my_rectangle.get_area(my_rectangle)
+print(my_rectangle.get_area(my_rectangle))
